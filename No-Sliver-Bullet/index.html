@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>No Sliver Bullet - 星晚，挽星，与夜同眠</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="幻想郷"><meta name="msapplication-TileImage" content="/img/mizuki_smile.jpeg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="幻想郷"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="Backend, Algorithm, Cybersecurity | Dev&amp;amp;Team Lead | MSCS at CU Boulder 🎓 | Piano🎹, Guitar🎸, Archery🏹, Driving 🦽🚲🛵🏎️ | Pansexuality | INFJ"><meta property="og:type" content="blog"><meta property="og:title" content="幻想郷"><meta property="og:url" content="https://starneko.com/"><meta property="og:site_name" content="幻想郷"><meta property="og:description" content="Backend, Algorithm, Cybersecurity | Dev&amp;amp;Team Lead | MSCS at CU Boulder 🎓 | Piano🎹, Guitar🎸, Archery🏹, Driving 🦽🚲🛵🏎️ | Pansexuality | INFJ"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://starneko.com/img/mizuki_smile.jpeg"><meta property="article:published_time" content="2024-05-15T03:37:25.000Z"><meta property="article:modified_time" content="2024-09-11T07:22:21.064Z"><meta property="article:author" content="Star Neko"><meta property="article:tag" content="Software Architecture"><meta property="article:tag" content="Course Notes"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://starneko.com/img/mizuki_smile.jpeg"><meta property="twitter:creator" content="@MizukiStarNeko"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://starneko.com"},"headline":"幻想郷","image":[],"datePublished":"2024-05-15T03:37:25.000Z","dateModified":"2024-09-11T07:22:21.064Z","author":{"@type":"Person","name":"Star Neko"},"publisher":{"@type":"Organization","name":"星晚，挽星，与夜同眠","logo":{"@type":"ImageObject","url":"https://starneko.com/img/mizuki_smile.jpeg"}},"description":"Cybersecurity, Backend, Algorithm Dev. Pursuing MSCS at CU Boulder 🎓 | IELTS📖, Piano🎹, Guitar🎸, Archery🏹, Driving 🚗 | E2: 2022-8-5 | Pansexuality | INFJ"}</script><link rel="canonical" href="https://starneko.com/No-Sliver-Bullet/"><link rel="icon" href="/img/mizuki_smile.jpeg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.1.1"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/mizuki_smile.jpeg" alt="星晚，挽星，与夜同眠" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/profile">Profile</a><a class="navbar-item" href="/profile_cn">简介</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Github" href="https://github.com/misakabit"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2024-05-15T03:37:25.000Z" title="5/15/2024, 3:37:25 AM">2024-05-15</time></span><span class="level-item">Updated&nbsp;<time dateTime="2024-09-11T07:22:21.064Z" title="9/11/2024, 7:22:21 AM">2024-09-11</time></span><span class="level-item"><a class="link-muted" href="/categories/CU-Boulder/">CU Boulder</a><span> / </span><a class="link-muted" href="/categories/CU-Boulder/MSCS/">MSCS</a><span> / </span><a class="link-muted" href="/categories/CU-Boulder/MSCS/Fundamentals-of-Software-Architecture-for-Big-Data/">Fundamentals of Software Architecture for Big Data</a><span> / </span><a class="link-muted" href="/categories/CU-Boulder/MSCS/Fundamentals-of-Software-Architecture-for-Big-Data/Week-1/">Week 1</a></span><span class="level-item">3 minutes read (About 397 words)</span></div></div><h1 class="title is-3 is-size-4-mobile">No Sliver Bullet</h1><div class="content"><h2 id="Overview-of-“No-Silver-Bullet”"><a href="#Overview-of-“No-Silver-Bullet”" class="headerlink" title="Overview of “No Silver Bullet”"></a>Overview of “No Silver Bullet”</h2><ul>
+<li><strong>Author</strong>: Frederick P. Brooks, Jr.</li>
+<li><strong>Other Works</strong>: “The Mythical Man-Month”</li>
+<li><strong>Publication</strong>: Second edition available, easily found online.</li>
+</ul>
+<h2 id="Key-Concepts"><a href="#Key-Concepts" class="headerlink" title="Key Concepts"></a>Key Concepts</h2><ul>
+<li><strong>Essence vs. Accidents</strong>: Brooks differentiates between the intrinsic difficulties (essence) of software engineering<br>and the incidental difficulties (accidents).<ul>
+<li><strong>Essence</strong>: Inherent complexities of the software itself.</li>
+<li><strong>Accidents</strong>: Difficulties related to the production of software.</li>
+</ul>
+</li>
+</ul>
+<h2 id="Essence-of-Software"><a href="#Essence-of-Software" class="headerlink" title="Essence of Software"></a>Essence of Software</h2><ul>
+<li><strong>Complexity</strong>:<ul>
+<li>Each software system is unique; no two systems are the same.</li>
+<li>Unlike manufacturing identical cars, software systems have unique architectures and requirements.</li>
+</ul>
+</li>
+<li><strong>Conformity</strong>:<ul>
+<li>Software must conform to various external factors, such as new leadership decisions or regulatory changes.</li>
+<li>Example: Switching from RabbitMQ to Kafka based on new leadership’s preference.</li>
+</ul>
+</li>
+<li><strong>Changeability</strong>:<ul>
+<li>Software is designed for change, not just replaceability.</li>
+<li>Constantly evolving requirements necessitate frequent changes in software.</li>
+</ul>
+</li>
+<li><strong>Invisibility</strong>:<ul>
+<li>Software lacks a visible blueprint like a house.</li>
+<li>Tools like UML and whiteboards attempt to visualize software, but much remains invisible.</li>
+<li>The inherent invisibility makes it challenging to fully grasp the software’s structure.</li>
+</ul>
+</li>
+</ul>
+<h2 id="Improving-Software-Development"><a href="#Improving-Software-Development" class="headerlink" title="Improving Software Development"></a>Improving Software Development</h2><ul>
+<li><strong>Iterative Development</strong>:<ul>
+<li>Emphasizing small, incremental improvements.</li>
+</ul>
+</li>
+<li><strong>Great People</strong>:<ul>
+<li>Having talented individuals is crucial for addressing the essence of software.</li>
+<li>Training the next generation of designers, including software engineers and data scientists, is essential.</li>
+</ul>
+</li>
+</ul>
+<h2 id="Key-Takeaway"><a href="#Key-Takeaway" class="headerlink" title="Key Takeaway"></a>Key Takeaway</h2><ul>
+<li><strong>No Significant Breakthrough</strong>:<ul>
+<li>Despite various advancements, there has been no single technology or practice that has improved software<br>development productivity by an order of magnitude in the past decade.</li>
+<li>The challenges of software engineering remain deeply rooted in its essence.</li>
+</ul>
+</li>
+</ul>
+<h2 id="Potential-Quiz-Topics"><a href="#Potential-Quiz-Topics" class="headerlink" title="Potential Quiz Topics"></a>Potential Quiz Topics</h2><ol>
+<li><p><strong>Essence vs. Accidents</strong>:</p>
+<ul>
+<li>Define the difference between essence and accidents in software engineering.</li>
+<li>Provide examples of each.</li>
+</ul>
+</li>
+<li><p><strong>Complexity</strong>:</p>
+<ul>
+<li>Explain why software complexity is different from manufacturing complexity.</li>
+<li>Describe the unique challenges of software complexity.</li>
+</ul>
+</li>
+<li><p><strong>Conformity</strong>:</p>
+<ul>
+<li>Discuss how conformity impacts software development.</li>
+<li>Give an example of conformity affecting software choices.</li>
+</ul>
+</li>
+<li><p><strong>Changeability</strong>:</p>
+<ul>
+<li>Explain why changeability is a fundamental aspect of software.</li>
+<li>Compare changeability in software to other fields (e.g., automobile recalls).</li>
+</ul>
+</li>
+<li><p><strong>Invisibility</strong>:</p>
+<ul>
+<li>Describe the challenges of software invisibility.</li>
+<li>Explain why tools like UML and whiteboards are insufficient.</li>
+</ul>
+</li>
+<li><p><strong>Iterative Development and Great People</strong>:</p>
+<ul>
+<li>Discuss the importance of iterative development in improving software.</li>
+<li>Explain why having great people is crucial for addressing software essence.</li>
+</ul>
+</li>
+<li><p><strong>No Significant Breakthrough</strong>:</p>
+<ul>
+<li>Summarize Brooks’s conclusion about the lack of a “silver bullet” in software engineering.</li>
+</ul>
+</li>
+</ol>
+<h2 id="Reference-EN-Edition-file-pdf"><a href="#Reference-EN-Edition-file-pdf" class="headerlink" title="Reference: EN Edition file pdf"></a>Reference: EN Edition file pdf</h2>
+
+	<div class="row">
+    <embed src="/file/No_Silver_Bullet.pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+
+<h2 id="Reference-CN-Edition-file-pdf"><a href="#Reference-CN-Edition-file-pdf" class="headerlink" title="Reference: CN Edition file pdf"></a>Reference: CN Edition file pdf</h2>
+
+	<div class="row">
+    <embed src="/file/No_Silver_Bullet.zh-CN.pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+</div><div class="article-licensing box"><div class="licensing-title"><p>No Sliver Bullet</p><p><a href="https://starneko.com/No-Sliver-Bullet/">https://starneko.com/No-Sliver-Bullet/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>Star Neko</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2024-05-15</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2024-09-11</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/Software-Architecture/">Software Architecture</a><a class="link-muted mr-2" rel="tag" href="/tags/Course-Notes/">Course Notes</a></div><div class="sharethis-inline-share-buttons"></div><script src="https://platform-api.sharethis.com/js/sharethis.js#property=62efd1f17fd8ff00190d77ee&amp;product=inline-share-buttons" defer></script></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">Like this article? Support the author with</h3><div class="buttons is-centered"><a class="button donate" href="https://www.buymeacoffee.com/misakabit" target="_blank" rel="noopener" data-type="buymeacoffee"><span class="icon is-small"><i class="fas fa-coffee"></i></span><span>Buy me a coffee</span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/Simple-Aged-Cache/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">Simple Aged Cache (Project)</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/Master-Theorem/"><span class="level-item">Master Theorem</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">Comments</h3><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div><script>var disqus_config = function () {
+            this.page.url = 'https://starneko.com/No-Sliver-Bullet/';
+            this.page.identifier = 'No-Sliver-Bullet/';
+        };
+        (function() {
+            var d = document, s = d.createElement('script');  
+            s.src = '//' + 'misakabit' + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="https://starneko.com/img/mizuki_smile.jpeg" alt="Star Neko"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Star Neko</p><p class="is-size-6 is-block">Cybersecurity, Backend, Algorithm Dev. Pursuing MSCS at CU Boulder 🎓 | IELTS📖, Piano🎹, Guitar🎸, Archery🏹, Driving 🚗 | E2: 2022-8-5 | Pansexuality | INFJ</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Rhodes Island</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">6</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">8</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">11</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/misakabit" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/misakabit"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com/MizukiStarNeko"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Telegram" href="https://t.me/misakabit"><i class="fab fa-telegram"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Steam" href="https://steamcommunity.com/id/misakabit/"><i class="fab fa-steam"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://facebook.com/misakabit"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Email" href="mailto:MizukiStarNeko@gmail.com"><i class="fas fa-envelope"></i></a></div></div></div><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">Links</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://blog.yuban.tech" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">小柒</span></span><span class="level-right"><span class="level-item tag">blog.yuban.tech</span></span></a></li><li><a class="level is-mobile" href="https://www.gymxbl.com" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">小小柳之絮</span></span><span class="level-right"><span class="level-item tag">www.gymxbl.com</span></span></a></li><li><a class="level is-mobile" href="https://xiaotian7196.github.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">XIAOTIAN7196</span></span><span class="level-right"><span class="level-item tag">xiaotian7196.github.io</span></span></a></li><li><a class="level is-mobile" href="https://www.mis1042.com" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Misaka10042</span></span><span class="level-right"><span class="level-item tag">www.mis1042.com</span></span></a></li><li><a class="level is-mobile" href="https://www.oplog.cn" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">啊不都</span></span><span class="level-right"><span class="level-item tag">www.oplog.cn</span></span></a></li><li><a class="level is-mobile" href="https://www.crystmaple.net" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">水碧枫的甜点屋</span></span><span class="level-right"><span class="level-item tag">www.crystmaple.net</span></span></a></li></ul></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/CU-Boulder/"><span class="level-start"><span class="level-item">CU Boulder</span></span><span class="level-end"><span class="level-item tag">5</span></span></a><ul><li><a class="level is-mobile" href="/categories/CU-Boulder/MSCS/"><span class="level-start"><span class="level-item">MSCS</span></span><span class="level-end"><span class="level-item tag">5</span></span></a><ul><li><a class="level is-mobile" href="/categories/CU-Boulder/MSCS/Dynamic-Programming-and-Greedy-Algorithms/"><span class="level-start"><span class="level-item">Dynamic Programming and Greedy Algorithms</span></span><span class="level-end"><span class="level-item tag">2</span></span></a><ul><li><a class="level is-mobile" href="/categories/CU-Boulder/MSCS/Dynamic-Programming-and-Greedy-Algorithms/Week-1/"><span class="level-start"><span class="level-item">Week 1</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/CU-Boulder/MSCS/Fundamentals-of-Software-Architecture-for-Big-Data/"><span class="level-start"><span class="level-item">Fundamentals of Software Architecture for Big Data</span></span><span class="level-end"><span class="level-item tag">3</span></span></a><ul><li><a class="level is-mobile" href="/categories/CU-Boulder/MSCS/Fundamentals-of-Software-Architecture-for-Big-Data/Week-1/"><span class="level-start"><span class="level-item">Week 1</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/CU-Boulder/MSCS/Fundamentals-of-Software-Architecture-for-Big-Data/Week-2/"><span class="level-start"><span class="level-item">Week 2</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li></ul></li></ul></li><li><a class="level is-mobile" href="/categories/Hexo/"><span class="level-start"><span class="level-item">Hexo</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><!--!--><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">Recents</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-06-17T03:31:16.000Z">2024-06-17</time></p><p class="title"><a href="/Blockchain-Fundamentals/">Blockchain Fundamentals</a></p><p class="categories"><a href="/categories/CU-Boulder/">CU Boulder</a> / <a href="/categories/CU-Boulder/MSCS/">MSCS</a> / <a href="/categories/CU-Boulder/MSCS/Fundamentals-of-Software-Architecture-for-Big-Data/">Fundamentals of Software Architecture for Big Data</a> / <a href="/categories/CU-Boulder/MSCS/Fundamentals-of-Software-Architecture-for-Big-Data/Week-2/">Week 2</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-06-14T08:37:37.000Z">2024-06-14</time></p><p class="title"><a href="/Simple-Aged-Cache/">Simple Aged Cache (Project)</a></p><p class="categories"><a href="/categories/CU-Boulder/">CU Boulder</a> / <a href="/categories/CU-Boulder/MSCS/">MSCS</a> / <a href="/categories/CU-Boulder/MSCS/Fundamentals-of-Software-Architecture-for-Big-Data/">Fundamentals of Software Architecture for Big Data</a> / <a href="/categories/CU-Boulder/MSCS/Fundamentals-of-Software-Architecture-for-Big-Data/Week-1/">Week 1</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-05-15T03:37:25.000Z">2024-05-15</time></p><p class="title"><a href="/No-Sliver-Bullet/">No Sliver Bullet</a></p><p class="categories"><a href="/categories/CU-Boulder/">CU Boulder</a> / <a href="/categories/CU-Boulder/MSCS/">MSCS</a> / <a href="/categories/CU-Boulder/MSCS/Fundamentals-of-Software-Architecture-for-Big-Data/">Fundamentals of Software Architecture for Big Data</a> / <a href="/categories/CU-Boulder/MSCS/Fundamentals-of-Software-Architecture-for-Big-Data/Week-1/">Week 1</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-04-09T14:30:00.000Z">2024-04-09</time></p><p class="title"><a href="/Master-Theorem/">Master Theorem</a></p><p class="categories"><a href="/categories/CU-Boulder/">CU Boulder</a> / <a href="/categories/CU-Boulder/MSCS/">MSCS</a> / <a href="/categories/CU-Boulder/MSCS/Dynamic-Programming-and-Greedy-Algorithms/">Dynamic Programming and Greedy Algorithms</a> / <a href="/categories/CU-Boulder/MSCS/Dynamic-Programming-and-Greedy-Algorithms/Week-1/">Week 1</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-04-09T07:30:00.000Z">2024-04-09</time></p><p class="title"><a href="/Karatsuba-Algorithm/">Karatsuba Algorithm</a></p><p class="categories"><a href="/categories/CU-Boulder/">CU Boulder</a> / <a href="/categories/CU-Boulder/MSCS/">MSCS</a> / <a href="/categories/CU-Boulder/MSCS/Dynamic-Programming-and-Greedy-Algorithms/">Dynamic Programming and Greedy Algorithms</a> / <a href="/categories/CU-Boulder/MSCS/Dynamic-Programming-and-Greedy-Algorithms/Week-1/">Week 1</a></p></div></article></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/Algorithm-Analysis/"><span class="tag">Algorithm Analysis</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Algorithms/"><span class="tag">Algorithms</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Bitcoin/"><span class="tag">Bitcoin</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Blockchain/"><span class="tag">Blockchain</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Course-Notes/"><span class="tag">Course Notes</span><span class="tag">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Hexo/"><span class="tag">Hexo</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Karatsuba-Algorithm/"><span class="tag">Karatsuba Algorithm</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Recursion/"><span class="tag">Recursion</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Software-Architecture/"><span class="tag">Software Architecture</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Testing/"><span class="tag">Testing</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Time-Complexity/"><span class="tag">Time Complexity</span><span class="tag">1</span></a></div></div></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/mizuki_smile.jpeg" alt="星晚，挽星，与夜同眠" height="28"></a><p class="is-size-7"><span>&copy; 2024 Star Neko</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution-NonCommercial 4.0 International" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="fab fa-creative-commons-nc"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="GitHub" href="https://github.com/misakabit"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>

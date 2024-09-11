@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="robots" content="noindex"><meta><title>Tag: Algorithm Analysis - 星晚，挽星，与夜同眠</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="幻想郷"><meta name="msapplication-TileImage" content="/img/mizuki_smile.jpeg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="幻想郷"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="Backend, Algorithm, Cybersecurity | Dev&amp;amp;Team Lead | MSCS at CU Boulder 🎓 | Piano🎹, Guitar🎸, Archery🏹, Driving 🦽🚲🛵🏎️ | Pansexuality | INFJ"><meta property="og:type" content="blog"><meta property="og:title" content="幻想郷"><meta property="og:url" content="https://starneko.com/"><meta property="og:site_name" content="幻想郷"><meta property="og:description" content="Backend, Algorithm, Cybersecurity | Dev&amp;amp;Team Lead | MSCS at CU Boulder 🎓 | Piano🎹, Guitar🎸, Archery🏹, Driving 🦽🚲🛵🏎️ | Pansexuality | INFJ"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://starneko.com/img/mizuki_smile.jpeg"><meta property="article:author" content="Star Neko"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://starneko.com/img/mizuki_smile.jpeg"><meta property="twitter:creator" content="@MizukiStarNeko"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://starneko.com"},"headline":"幻想郷","image":[],"author":{"@type":"Person","name":"Star Neko"},"publisher":{"@type":"Organization","name":"星晚，挽星，与夜同眠","logo":{"@type":"ImageObject","url":"https://starneko.com/img/mizuki_smile.jpeg"}},"description":"Cybersecurity, Backend, Algorithm Dev. Pursuing MSCS at CU Boulder 🎓 | IELTS📖, Piano🎹, Guitar🎸, Archery🏹, Driving 🚗 | E2: 2022-8-5 | Pansexuality | INFJ"}</script><link rel="icon" href="/img/mizuki_smile.jpeg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.1.1"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/mizuki_smile.jpeg" alt="星晚，挽星，与夜同眠" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/profile">Profile</a><a class="navbar-item" href="/profile_cn">简介</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Github" href="https://github.com/misakabit"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/tags">Tags</a></li><li class="is-active"><a href="#" aria-current="page">Algorithm Analysis</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2024-04-09T14:30:00.000Z" title="4/9/2024, 2:30:00 PM">2024-04-09</time></span><span class="level-item">Updated&nbsp;<time dateTime="2024-09-11T07:22:21.064Z" title="9/11/2024, 7:22:21 AM">2024-09-11</time></span><span class="level-item"><a class="link-muted" href="/categories/CU-Boulder/">CU Boulder</a><span> / </span><a class="link-muted" href="/categories/CU-Boulder/MSCS/">MSCS</a><span> / </span><a class="link-muted" href="/categories/CU-Boulder/MSCS/Dynamic-Programming-and-Greedy-Algorithms/">Dynamic Programming and Greedy Algorithms</a><span> / </span><a class="link-muted" href="/categories/CU-Boulder/MSCS/Dynamic-Programming-and-Greedy-Algorithms/Week-1/">Week 1</a></span><span class="level-item">10 minutes read (About 1574 words)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/Master-Theorem/">Master Theorem</a></p><div class="content"><h2 id="Introduction-and-Background"><a href="#Introduction-and-Background" class="headerlink" title="Introduction and Background"></a>Introduction and Background</h2><ul>
+<li><p>The Master Theorem is a powerful tool in the field of computer science, specifically in the analysis of algorithms. It is used to determine the time complexity of recursive algorithms, particularly those which follow a ‘divide and conquer’ approach<sup id="a1"><a href="#f1">1</a></sup><sup id="a2"><a href="#f2">2</a></sup>.</p>
+</li>
+<li><p>In divide and conquer algorithms, a problem is broken down into several smaller subproblems of the same type. These smaller problems are then solved independently and the solutions are combined to solve the original problem. Recursion is a common principle in such algorithms. Typical examples of divide and conquer algorithms include the binary search, merge sort, and quick sort algorithms<sup id="a3"><a href="#f3">3</a></sup>.</p>
+</li>
+<li><p>The Master Theorem provides a systematic method to calculate the time complexity of such divide and conquer algorithms. It can immediately give the time complexity in terms of Big O notation, thus providing a simple way to predict the efficiency of the algorithm<sup id="a3"><a href="#f3">3</a></sup><sup id="a4"><a href="#f4">4</a></sup>.</p>
+</li>
+<li><p>The theorem was first presented in the textbook “Introduction to Algorithms” by Cormen, Leiserson, Rivest, and Stein<sup id="a1"><a href="#f1">1</a></sup>. Since then, it has remained an integral part of the study of algorithms due to its practical use in analyzing the time complexity of recursive functions<sup id="a2"><a href="#f2">2</a></sup><sup id="a3"><a href="#f3">3</a></sup><sup id="a4"><a href="#f4">4</a></sup>.</p>
+</li>
+</ul>
+<h2 id="Methodology-and-Results"><a href="#Methodology-and-Results" class="headerlink" title="Methodology and Results"></a>Methodology and Results</h2><h3 id="Divide-and-conquer-algorithm"><a href="#Divide-and-conquer-algorithm" class="headerlink" title="Divide and conquer algorithm"></a>Divide and conquer algorithm</h3><p>Divide and conquer algorithm is a problem-solving method that decomposes a problem into several smaller, structurally similar subproblems, solves these subproblems recursively, and then merges their solutions to obtain the solution to the original problem.</p>
+<h3 id="How-to-set-up-recursive-relations"><a href="#How-to-set-up-recursive-relations" class="headerlink" title="How to set up recursive relations"></a>How to set up recursive relations</h3><p>The overall idea for solving the problem is to establish a recurrence relation. Through the recurrence relation, the problem can be decomposed into smaller subproblems, and the solution to the original problem can be ultimately obtained.</p>
+<p>Recurrence relations are usually represented in mathematical form, where T(n) represents the time taken to process an input of size n.</p>
+<ul>
+<li><p><strong>Base Case</strong>: When the problem size is a small constant, the processing time is usually constant, represented as Θ(1). This is the basic termination condition for recursion.</p>
+</li>
+<li><p><strong>Recursive Case</strong>: When the problem size exceeds the base case, the recurrence relation consists of two parts:</p>
+<ul>
+<li>aT(n&#x2F;b): Represents the time taken to process a total of a subproblems of size n&#x2F;b recursively.</li>
+<li>fdiv(n): Represents the time taken for the divide step, i.e., decomposing the problem into subproblems.</li>
+<li>fcomb(n): Represents the time taken for the combine step, i.e., merging the solutions of subproblems.</li>
+</ul>
+</li>
+<li><p><strong>Meanings of Parameters</strong>:</p>
+<ul>
+<li>In aT(n&#x2F;b), a represents the number of subproblems after decomposition, and T(n&#x2F;b) represents the time taken to process a single subproblem.</li>
+<li>fdiv(n) represents the time taken for the divide step, usually related to the problem size n.</li>
+<li>fcomb(n) represents the time taken for the combine step, also usually related to the problem size n.</li>
+</ul>
+</li>
+<li><p><strong>Recurrence Relation</strong>:</p>
+<ul>
+<li>The entire recurrence relation describes the process of decomposition, processing, and merging of the problem, as well as the time consumed by each step.</li>
+</ul>
+</li>
+</ul>
+<h3 id="The-divide-and-conquer-algorithm-and-recursive-relations"><a href="#The-divide-and-conquer-algorithm-and-recursive-relations" class="headerlink" title="The divide and conquer algorithm and recursive relations"></a>The divide and conquer algorithm and recursive relations</h3><ul>
+<li><p>The relationship between the divide and conquer algorithm and recursive relations is closely intertwined. The divide and conquer algorithm is a method of breaking down a problem into smaller subproblems and recursively solving them. In the divide and conquer algorithm, the original problem is decomposed into multiple subproblems, and then the final solution is obtained by recursively solving these subproblems.</p>
+</li>
+<li><p>Recursive relations describe the relationship between the size of the problem and its solution. In the divide and conquer algorithm, recursive relations are used to represent the process of decomposing the problem into subproblems and to calculate the time and resources required to solve these subproblems. Recursive relations are typically expressed in recursive form, where the size of the problem is a function of the size of the problem itself.</p>
+</li>
+<li><p>By solving recursive relations, we can determine the time and space complexity of the divide and conquer algorithm. Through analyzing recursive relations, we can understand how the size of the problem decreases with each recursion and determine the time and space consumption of each recursive step. This helps us evaluate the efficiency of the algorithm and provides guidance for solving the problem.</p>
+</li>
+<li><p>Therefore, the relationship between the divide and conquer algorithm and recursive relations is that the divide and conquer algorithm solves the original problem by recursively solving subproblems, and recursive relations are used to describe the relationship between the size of the problem and its solution.</p>
+</li>
+</ul>
+<h3 id="Expansion-Method-Standard-Method"><a href="#Expansion-Method-Standard-Method" class="headerlink" title="Expansion Method (Standard Method)"></a>Expansion Method (Standard Method)</h3><p>Expansion method is a commonly used approach for solving recursive relations. It decomposes the problem into smaller subproblems by expanding the recursive relations multiple times, and gradually obtains the solution to the original problem.</p>
+<ul>
+<li><strong>Step 1: Expansion of Recursive Relations</strong><br>Firstly, expand the recursive relations to obtain the solution for each subproblem, and express them in the form of recursive expressions.</li>
+<li><strong>Step 2: Construction of Recurrence Tree</strong><br>Construct a recurrence tree with the expanded recursive expressions, where each level of the tree represents a different recursion level, and each node represents a solution to a subproblem.</li>
+<li><strong>Step 3: Solving the Recurrence Tree</strong><br>Analyze and solve the recurrence tree to obtain the analytical solution or recurrence relation of the problem, thereby determining the algorithm’s time complexity.</li>
+<li><strong>Step 4: Verification</strong><br>Finally, verify whether the obtained time complexity satisfies the original recursive relations to ensure the correctness of the analytical solution.</li>
+</ul>
+<h3 id="Examples-of-merge-sort-and-maximum-subarray-problem"><a href="#Examples-of-merge-sort-and-maximum-subarray-problem" class="headerlink" title="Examples of merge sort and maximum subarray problem"></a>Examples of merge sort and maximum subarray problem</h3><ul>
+<li><p><strong>Algorithm Concept</strong></p>
+<ul>
+<li>Divide the original array into two subarrays, solve the maximum subarray problem for each subarray separately, and then merge them to obtain the maximum subarray of the original array.</li>
+<li>The problem can be recursively solved until the size of the array is small enough to be solved directly.</li>
+</ul>
+</li>
+<li><p><strong>Process of Divide and Conquer Algorithm</strong></p>
+<ul>
+<li><strong>Divide</strong>: Divide the original array into two subarrays and solve the maximum subarray problem for each subarray separately.</li>
+<li><strong>Combine</strong>: Merge the maximum subarrays of the left and right subarrays to obtain the maximum subarray across the middle position.</li>
+<li><strong>Recurrence</strong>: Recursively solve the maximum subarray problem for the left and right subarrays until the size of the array is small enough to be solved directly.</li>
+</ul>
+</li>
+<li><p><strong>Application of Expansion Method</strong></p>
+<ul>
+<li>Use the expansion method to analyze the time complexity of the divide and conquer algorithm. Firstly, expand the recursive relations, then construct the recursion tree, and finally solve the recursion tree to obtain the time complexity of the algorithm.</li>
+</ul>
+</li>
+<li><p><strong>Analysis of Time Complexity</strong></p>
+<ul>
+<li><strong>Time Complexity of Divide Step</strong>: Typically Θ(1).</li>
+<li><strong>Time Complexity of Combine Step</strong>: Typically Θ(n).</li>
+<li><strong>Time Complexity of Recursive Calls</strong>: O(logn).</li>
+<li>Combining the above steps, the time complexity of the maximum subarray problem is O(nlogn).</li>
+</ul>
+</li>
+<li><p><strong>Efficiency Analysis of the Algorithm</strong></p>
+<ul>
+<li>The divide and conquer algorithm for the maximum subarray problem is efficient when handling large-scale arrays because it decomposes the problem into smaller subproblems, solves them recursively, and then merges the solutions.</li>
+<li>The algorithm’s time complexity is O(nlogn), suitable for handling large-scale arrays.</li>
+</ul>
+</li>
+</ul>
+<h3 id="Master-theorem-Custom-Method"><a href="#Master-theorem-Custom-Method" class="headerlink" title="Master theorem (Custom Method)"></a>Master theorem (Custom Method)</h3><p>The Master Theorem is a method used to solve recursive relations, particularly applicable to recursive relations in divide and conquer algorithms. It provides a quick way to calculate the time complexity of recursive algorithms without the need for detailed expansion and solving of recursive relations.</p>
+<p>The Master Theorem is applicable to recursive relations of the following form: </p>
+<p><strong>T(n) &#x3D; aT(n&#x2F;b) + f(n)</strong></p>
+<p>Here, ‘a’ is the number of recursive steps, ‘n&#x2F;b’ is the size of each recursive step, and ‘f(n)’ represents the workload other than the recursive steps.</p>
+<p>The basic idea of the Master Theorem is to determine the time complexity of the recursive algorithm by comparing the number of recursive steps ‘a’, the ratio of sizes ‘n&#x2F;b’, and the growth rate of the workload ‘f(n)’.</p>
+<p>The Master Theorem has three cases:</p>
+<ol>
+<li>If f(n) &#x3D; O(n^c), where c &lt; log_b(a), then the time complexity of the recursive algorithm is T(n) &#x3D; Θ(n^log_b(a)).</li>
+<li>If f(n) &#x3D; Θ(n^c log^k n), where k ≥ 0 and c &#x3D; log_b(a), then the time complexity of the recursive algorithm is T(n) &#x3D; Θ(n^c log^(k+1) n).</li>
+<li>If f(n) &#x3D; Ω(n^c), where c &gt; log_b(a), and af(n&#x2F;b) ≤ kf(n) (for some constant k &lt; 1 and sufficiently large n), then the time complexity of the recursive algorithm is T(n) &#x3D; Θ(f(n)).</li>
+</ol>
+<p>It’s important to note that the Master Theorem is only applicable to specific forms of recursive relations, and may not provide accurate time complexity for other forms of recursive relations.</p>
+<h2 id="Discussion-and-Conclusion"><a href="#Discussion-and-Conclusion" class="headerlink" title="Discussion and Conclusion"></a>Discussion and Conclusion</h2><p>In this lesson, the instructor introduced</p>
+<ul>
+<li>how to solve recursive relations, focusing on divide-and-conquer algorithm.</li>
+<li>Demonstrated relationship between divide-and-conquer algorithm and recursive relations through examples.</li>
+<li>Explained setting up recursive relations.</li>
+<li>Introduced standard method for solving recursive relations, known as expansion method.</li>
+<li>Showed solving recursive relations by expanding them multiple times.</li>
+<li>Provided solutions for merge sort and maximum subarray problem.</li>
+<li>Mentioned solution method for recursive relations in general context, called master theorem.</li>
+<li>Master theorem offers solutions to recursive relations based on different scenarios.</li>
+</ul>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><sup id="f1">1</sup> Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein. “Introduction to Algorithms,” Third Edition. The MIT Press, 2009. <a href="#a1">↩</a><br><sup id="f2">2</sup> Michael T. Goodrich, Roberto Tamassia, Michael H. Goldwasser. “Data Structures and Algorithms in Python,” Wiley, 2013. <a href="#a2">↩</a><br><sup id="f3">3</sup> Sedgewick, Robert, Wayne, Kevin. “Algorithms,” Fourth Edition. Addison-Wesley Professional, 2011. <a href="#a3">↩</a><br><sup id="f4">4</sup> Dasgupta, Papadimitriou, Vazirani. “Algorithms,” McGraw-Hill Science&#x2F;Engineering&#x2F;Math, 2008. <a href="#a4">↩</a></p>
+</div></article></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="https://starneko.com/img/mizuki_smile.jpeg" alt="Star Neko"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Star Neko</p><p class="is-size-6 is-block">Cybersecurity, Backend, Algorithm Dev. Pursuing MSCS at CU Boulder 🎓 | IELTS📖, Piano🎹, Guitar🎸, Archery🏹, Driving 🚗 | E2: 2022-8-5 | Pansexuality | INFJ</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Rhodes Island</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">6</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">8</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">11</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/misakabit" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/misakabit"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com/MizukiStarNeko"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Telegram" href="https://t.me/misakabit"><i class="fab fa-telegram"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Steam" href="https://steamcommunity.com/id/misakabit/"><i class="fab fa-steam"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://facebook.com/misakabit"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Email" href="mailto:MizukiStarNeko@gmail.com"><i class="fas fa-envelope"></i></a></div></div></div><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">Links</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://blog.yuban.tech" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">小柒</span></span><span class="level-right"><span class="level-item tag">blog.yuban.tech</span></span></a></li><li><a class="level is-mobile" href="https://www.gymxbl.com" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">小小柳之絮</span></span><span class="level-right"><span class="level-item tag">www.gymxbl.com</span></span></a></li><li><a class="level is-mobile" href="https://xiaotian7196.github.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">XIAOTIAN7196</span></span><span class="level-right"><span class="level-item tag">xiaotian7196.github.io</span></span></a></li><li><a class="level is-mobile" href="https://www.mis1042.com" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Misaka10042</span></span><span class="level-right"><span class="level-item tag">www.mis1042.com</span></span></a></li><li><a class="level is-mobile" href="https://www.oplog.cn" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">啊不都</span></span><span class="level-right"><span class="level-item tag">www.oplog.cn</span></span></a></li><li><a class="level is-mobile" href="https://www.crystmaple.net" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">水碧枫的甜点屋</span></span><span class="level-right"><span class="level-item tag">www.crystmaple.net</span></span></a></li></ul></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/CU-Boulder/"><span class="level-start"><span class="level-item">CU Boulder</span></span><span class="level-end"><span class="level-item tag">5</span></span></a><ul><li><a class="level is-mobile" href="/categories/CU-Boulder/MSCS/"><span class="level-start"><span class="level-item">MSCS</span></span><span class="level-end"><span class="level-item tag">5</span></span></a><ul><li><a class="level is-mobile" href="/categories/CU-Boulder/MSCS/Dynamic-Programming-and-Greedy-Algorithms/"><span class="level-start"><span class="level-item">Dynamic Programming and Greedy Algorithms</span></span><span class="level-end"><span class="level-item tag">2</span></span></a><ul><li><a class="level is-mobile" href="/categories/CU-Boulder/MSCS/Dynamic-Programming-and-Greedy-Algorithms/Week-1/"><span class="level-start"><span class="level-item">Week 1</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/CU-Boulder/MSCS/Fundamentals-of-Software-Architecture-for-Big-Data/"><span class="level-start"><span class="level-item">Fundamentals of Software Architecture for Big Data</span></span><span class="level-end"><span class="level-item tag">3</span></span></a><ul><li><a class="level is-mobile" href="/categories/CU-Boulder/MSCS/Fundamentals-of-Software-Architecture-for-Big-Data/Week-1/"><span class="level-start"><span class="level-item">Week 1</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/CU-Boulder/MSCS/Fundamentals-of-Software-Architecture-for-Big-Data/Week-2/"><span class="level-start"><span class="level-item">Week 2</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li></ul></li></ul></li><li><a class="level is-mobile" href="/categories/Hexo/"><span class="level-start"><span class="level-item">Hexo</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><!--!--><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">Recents</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-06-17T03:31:16.000Z">2024-06-17</time></p><p class="title"><a href="/Blockchain-Fundamentals/">Blockchain Fundamentals</a></p><p class="categories"><a href="/categories/CU-Boulder/">CU Boulder</a> / <a href="/categories/CU-Boulder/MSCS/">MSCS</a> / <a href="/categories/CU-Boulder/MSCS/Fundamentals-of-Software-Architecture-for-Big-Data/">Fundamentals of Software Architecture for Big Data</a> / <a href="/categories/CU-Boulder/MSCS/Fundamentals-of-Software-Architecture-for-Big-Data/Week-2/">Week 2</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-06-14T08:37:37.000Z">2024-06-14</time></p><p class="title"><a href="/Simple-Aged-Cache/">Simple Aged Cache (Project)</a></p><p class="categories"><a href="/categories/CU-Boulder/">CU Boulder</a> / <a href="/categories/CU-Boulder/MSCS/">MSCS</a> / <a href="/categories/CU-Boulder/MSCS/Fundamentals-of-Software-Architecture-for-Big-Data/">Fundamentals of Software Architecture for Big Data</a> / <a href="/categories/CU-Boulder/MSCS/Fundamentals-of-Software-Architecture-for-Big-Data/Week-1/">Week 1</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-05-15T03:37:25.000Z">2024-05-15</time></p><p class="title"><a href="/No-Sliver-Bullet/">No Sliver Bullet</a></p><p class="categories"><a href="/categories/CU-Boulder/">CU Boulder</a> / <a href="/categories/CU-Boulder/MSCS/">MSCS</a> / <a href="/categories/CU-Boulder/MSCS/Fundamentals-of-Software-Architecture-for-Big-Data/">Fundamentals of Software Architecture for Big Data</a> / <a href="/categories/CU-Boulder/MSCS/Fundamentals-of-Software-Architecture-for-Big-Data/Week-1/">Week 1</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-04-09T14:30:00.000Z">2024-04-09</time></p><p class="title"><a href="/Master-Theorem/">Master Theorem</a></p><p class="categories"><a href="/categories/CU-Boulder/">CU Boulder</a> / <a href="/categories/CU-Boulder/MSCS/">MSCS</a> / <a href="/categories/CU-Boulder/MSCS/Dynamic-Programming-and-Greedy-Algorithms/">Dynamic Programming and Greedy Algorithms</a> / <a href="/categories/CU-Boulder/MSCS/Dynamic-Programming-and-Greedy-Algorithms/Week-1/">Week 1</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-04-09T07:30:00.000Z">2024-04-09</time></p><p class="title"><a href="/Karatsuba-Algorithm/">Karatsuba Algorithm</a></p><p class="categories"><a href="/categories/CU-Boulder/">CU Boulder</a> / <a href="/categories/CU-Boulder/MSCS/">MSCS</a> / <a href="/categories/CU-Boulder/MSCS/Dynamic-Programming-and-Greedy-Algorithms/">Dynamic Programming and Greedy Algorithms</a> / <a href="/categories/CU-Boulder/MSCS/Dynamic-Programming-and-Greedy-Algorithms/Week-1/">Week 1</a></p></div></article></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/Algorithm-Analysis/"><span class="tag">Algorithm Analysis</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Algorithms/"><span class="tag">Algorithms</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Bitcoin/"><span class="tag">Bitcoin</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Blockchain/"><span class="tag">Blockchain</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Course-Notes/"><span class="tag">Course Notes</span><span class="tag">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Hexo/"><span class="tag">Hexo</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Karatsuba-Algorithm/"><span class="tag">Karatsuba Algorithm</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Recursion/"><span class="tag">Recursion</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Software-Architecture/"><span class="tag">Software Architecture</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Testing/"><span class="tag">Testing</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Time-Complexity/"><span class="tag">Time Complexity</span><span class="tag">1</span></a></div></div></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/mizuki_smile.jpeg" alt="星晚，挽星，与夜同眠" height="28"></a><p class="is-size-7"><span>&copy; 2024 Star Neko</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution-NonCommercial 4.0 International" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="fab fa-creative-commons-nc"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="GitHub" href="https://github.com/misakabit"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>
